@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:16
+    container_name: atp_db
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: atp_db
+    ports:
+    - "5432:5432"
